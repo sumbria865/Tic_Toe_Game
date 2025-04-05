@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+ padding: 0;
+}
+
+body{
+    background-color:#548687;
+    text-align:center;
+}
+.container{
+    height:70vh;
+    display:flex;
+  
+    justify-content:center;
+    align-items:center;
+        
+ 
+}
+
+.game
+{
+    height:60vmin;
+    width:60vmin;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap: 1.5vmin;
+}
+.box
+{
+    height: 18vmin;
+    width :18vmin;
+    border-radius:1rem;
+    border:none;
+    box-shadow:0 0 1rem rgba(0,0,0,0.3);
+    font-size:8vmin;
+    color:red;
+    background-color:white;
+
+}
+
+
+#reset-btn{ 
+    padding:1rem;
+    font-size:1.25rem;
+    background-color:black;
+    color:white;
+    border-radius:1rem;
+    border:none;
+}
+
+#new-btn{
+    padding:1rem;
+    font-size:1.25remk;
+    background-color:black;
+    color:white;
+    border-radius:1rem;
+    border:none;
+}
+
+#msg{
+    color:white;
+    font-size:8vmin;
+}
+.msg-container{
+    height:30vmin;
+
+}
+
+.hide
+{
+    display:none;
+}
+
+h1 {
+    color: #333;
+}
+/* Smooth transition for all elements */
+* {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Glow and scale effect on box hover */
+  .box:hover {
+    transform: scale(1.05);
+    background-color: #f1f1f1;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  /* Soft gradient background animation for the body */
+  body {
+    background: linear-gradient(120deg, #548687, #86a8a8);
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Add soft pop-up animation for win message */
+  @keyframes pop {
+    0% {
+      transform: scale(0.6);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  #msg {
+    animation: pop 0.5s ease-out;
+  }
+  
+  /* Add hover effect to buttons */
+  #reset-btn:hover,
+  #new-btn:hover {
+    background-color: #222;
+    box-shadow: 0 0 1rem white;
+    cursor: pointer;
+  }
+  
+  /* Slight inner glow for the game board */
+  .game {
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+  }
+  
+  /* Text shadow on heading */
+  h1 {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+  
